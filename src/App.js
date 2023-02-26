@@ -1,7 +1,7 @@
 import './App.css';
 import Navigation from "./containers/Navigation/Navigation";
 import SearchBar from "./containers/SearchBar/SearchBar";
-import Order from "./containers/Order";
+import Order from "./containers/Order/Order";
 import SFProDisplay from './fonts/SFProDisplay.ttf'
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {CssBaseline} from "@mui/material";

@@ -1,0 +1,17 @@
+.order-path {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  opacity: 0.5;
+  margin-bottom: 40px!important;
+}
+
+.order-title {
+  font-style: normal;
+  font-weight: 400!important;
+  font-size: 40px!important;
+  line-height: 100% !important;
+  color: #333333;
+  margin-bottom: 40px!important;
+}
