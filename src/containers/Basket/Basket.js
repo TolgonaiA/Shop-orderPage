@@ -32,7 +32,8 @@ const data = [
     name: 'Lorem ipsum dolor sit amet consectetur. Dictum venenatis porta at mus sit congue',
     art: 'L434-GH43',
     count: '0',
-    price: 420,
+    price: 10000,
+    prevPrice: 11000
   },
 ]
 
@@ -71,8 +72,16 @@ const Basket = () => {
                     <button className='basket-table-count-btn' type='button'>+</button>
                   </div>
                 </TableCell>
-                <TableCell align="left">{el.price}</TableCell>
-                <TableCell align="left">X</TableCell>
+                {el.prevPrice
+                  ? <TableCell sx={{fontSize: '18px', color: '#E11E26'}} align="left">
+                      {el.price}c
+                      <span className='basket-table-item'>{el.prevPrice}c</span>
+                    </TableCell>
+                  : <TableCell sx={{fontSize: '18px'}} align="left">{el.price}c</TableCell>
+                }
+                <TableCell align="left">
+                  <button className='basket-delete-btn' type='button'></button>
+                </TableCell>
               </TableRow>
               </>
             )}

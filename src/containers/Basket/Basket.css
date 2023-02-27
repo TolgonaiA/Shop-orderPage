@@ -26,8 +26,8 @@
 }
 
 .basket-title-icon {
-  width: 10.5px;
-  height: 5.25px;
+  width: 25px;
+  height: 20px;
   position: absolute;
   top:50%;
   left: 50%;
@@ -58,11 +58,27 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 15px;
   padding: 2px 0;
 }
 
 .basket-table-count-btn {
   background: none;
   border: none
+}
+
+.basket-table-item {
+  font-size: 13px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.basket-delete-btn {
+  background: url("../../assets/xbtn.png") no-repeat 50% 50%;
+  border: none;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
 }
