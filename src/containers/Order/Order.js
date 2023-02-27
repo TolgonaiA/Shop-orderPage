@@ -8,7 +8,7 @@ import OrderPlace from "../OrderPlace/OrderPlace";
 
 const Order = () => {
   return (
-    <Container maxWidth='lg' sx={{marginTop: '47px', background: 'rgba(229, 229, 229, 0.1)'}}>
+    <Container maxWidth='lg' sx={{marginTop: '47px', background: 'rgba(229, 229, 229, 0.1)', position: 'relative'}}>
       <Typography className='order-path'>Главная/Корзина/Оформление заказа</Typography>
       <Typography variant='h4' className='order-title'>Оформление заказа</Typography>
       <Box sx={{display: 'flex'}}>
