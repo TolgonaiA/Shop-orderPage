@@ -4,6 +4,7 @@ import Basket from "../Basket/Basket";
 import './Order.css';
 import OrderAmount from "../OrderAmount/OrderAmount";
 import OrderPlace from "../OrderPlace/OrderPlace";
+import ClientInfo from "../ClientInfo/ClientInfo";
 
 
 const Order = () => {
@@ -15,6 +16,7 @@ const Order = () => {
         <Box sx={{maxWidth: '65%'}}>
           <Basket/>
           <OrderPlace/>
+          <ClientInfo/>
         </Box>
         <Box sx={{marginLeft: '30px', width: '32%'}}>
           <OrderAmount/>
