@@ -26,7 +26,7 @@ const OrderPlace = () => {
             <InputForm
               id="add"
               label="Доб"
-              type="number"
+              type="text"
               inputWidth='70px'
             />
           </div>

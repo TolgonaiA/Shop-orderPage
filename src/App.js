@@ -5,6 +5,7 @@ import Order from "./containers/Order/Order";
 import SFProDisplay from './fonts/SFProDisplay.ttf'
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {CssBaseline} from "@mui/material";
+import Footer from "./containers/Footer/Footer";
 
 
 const theme = createTheme({
@@ -38,6 +39,7 @@ const App = () => {
         <Navigation/>
         <SearchBar></SearchBar>
         <Order></Order>
+        <Footer/>
       </ThemeProvider>
     </>
   );

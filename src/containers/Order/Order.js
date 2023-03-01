@@ -5,6 +5,7 @@ import './Order.css';
 import OrderAmount from "../OrderAmount/OrderAmount";
 import OrderPlace from "../OrderPlace/OrderPlace";
 import ClientInfo from "../ClientInfo/ClientInfo";
+import Delivery from "../Delivery/Delivery";
 
 
 const Order = () => {
@@ -17,6 +18,7 @@ const Order = () => {
           <Basket/>
           <OrderPlace/>
           <ClientInfo/>
+          <Delivery/>
         </Box>
         <Box sx={{marginLeft: '30px', width: '32%'}}>
           <OrderAmount/>

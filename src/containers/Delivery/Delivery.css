@@ -1,0 +1,27 @@
+.delivery-item {
+  display: flex;
+  align-items: center;
+}
+
+.delivery-item a {
+  font-size: 14px;
+  line-height: 100%;
+  color: #5178DC;
+  text-decoration: none;
+}
+
+.delivery-title {
+  font-weight: 500;
+  font-size: 18px!important;
+  line-height: 100%;
+  color: #333333;
+  opacity: 0.5;
+}
+
+.delivery-text {
+  font-size: 15px!important;
+  line-height: 100%;
+  color: #333333;
+  opacity: 0.5;
+  margin-bottom: 30px!important;
+}
