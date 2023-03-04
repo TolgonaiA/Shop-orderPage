@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Container, Link, Typography} from "@mui/material";
+import {Box, Container, Divider, Link, Typography} from "@mui/material";
 import './Footer.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -60,6 +60,8 @@ const Footer = () => {
             </Box>
           </Box>
         </Box>
+        <Divider sx={{bgcolor: 'rgba(255,255,255, 0.1)', margin: '30px 0'}}/>
+        <Typography className='footer-item'>Some shop name (c) 2017. All rights reserved</Typography>
       </Container>
     </Box>
   );

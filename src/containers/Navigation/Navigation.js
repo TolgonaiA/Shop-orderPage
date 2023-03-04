@@ -27,7 +27,7 @@ const Navigation = () => {
           <Box sx={{display: 'flex'}}>
             <Typography sx={{fontSize: '14px', position: 'relative', marginRight: '50px'}}>
               <MailOutlineIcon sx={{top: '3px', left: '-20px', width: '18px', height: '15px', position: 'absolute'}}/>
-              info@kanzler.kg
+              info@shop.kg
             </Typography>
             <Link sx={{color: '#E11E26', fontSize: '14px', borderBottom: '1px solid #E11E26', position: 'relative', marginRight: '18px'}} underline='none'>
               <PhoneIcon sx={{top: '3px', left: '-22px', width: '18px', height: '15px', position: 'absolute'}}/>
