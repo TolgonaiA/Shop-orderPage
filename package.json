@@ -2,7 +2,7 @@
   "name": "moore-shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://TolgonaiA.github.io/Shop-orderPage",
+  "homepage": "https://TolgonaiA.github.io/Shop-orderPage",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
