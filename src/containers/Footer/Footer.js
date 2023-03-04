@@ -17,6 +17,7 @@ const contacts = {
   'Уметалиева, 84': ['0777 90 22 33', '0312 90 22 33']
 }
 
+
 const Footer = () => {
   return (
     <Box sx={{background: '#262626'}}>
