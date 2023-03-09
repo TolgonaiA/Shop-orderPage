@@ -9,8 +9,8 @@ const OrderAmount = ({data}) => {
         <Typography sx={{padding: '0', fontSize: '20px'}} >Стоимость заказа</Typography>
         <div className='order-amount-detail'>
           <div>
-            <p className='order-amount-text'>Товары({data.length})</p>
-            <p className='order-amount-text amount'>{data.map(el => el.count * el.price).reduce((a,b) => a+b)}c</p>
+            <p className='order-amount-text'>Товары({data && data.length})</p>
+            <p className='order-amount-text amount'>{data && data.map(el => el.count * el.price).reduce((a,b) => a+b)}c</p>
           </div>
           <div>
             <p className='order-amount-text'>Доставка</p>
@@ -20,7 +20,7 @@ const OrderAmount = ({data}) => {
       </div>
       <div className='order-amount-total-wrap'>
         <p className='order-amount-total'>Итого</p>
-        <p className='total-amount'>{data.map(el => el.count * el.price).reduce((a,b) => a+b)}с</p>
+        <p className='total-amount'>{data && data.map(el => el.count * el.price).reduce((a,b) => a+b)}с</p>
       </div>
       <button className='total-amount-btn' type='button'>Подтвердить заказ</button>
       <div className='total-amount-agreement'>Подтверждая заказ, я принимаю условия

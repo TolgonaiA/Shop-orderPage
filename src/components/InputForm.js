@@ -23,7 +23,7 @@ const InputForm = ({id, label, type, margin, fullWidth, inputWidth}) => {
       }}
       InputLabelProps={{
         variant: 'filled',
-        shrink: 'true',
+        shrink: true,
         style: {padding: '0 20px', color:'rgba(0,0,0,0.5)'}
       }}
     />

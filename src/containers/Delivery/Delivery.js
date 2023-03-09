@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Delivery.css';
-import {Box, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Typography} from "@mui/material";
+import {Box, FormControl, FormControlLabel, Radio, RadioGroup, Typography} from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import InputForm from "../../components/InputForm";
 
@@ -10,6 +10,8 @@ const Delivery = () => {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+
+  
 
   return (
     <Box className='order-place'>
@@ -25,11 +27,13 @@ const Delivery = () => {
           >
             <div className='delivery-item'>
               <FormControlLabel value="pickup" control={<Radio checkedIcon={<CheckIcon sx={{background: '#EA5A5A', borderRadius: '50%',color: '#fff', width: '24px', height: '24px'}}/>}></Radio>} label="Самовывоз" />
-              <a href='#'>режим работы магазина ></a>
+              {/*eslint-disable-next-line*/}
+              <a href=''>режим работы магазина ></a>
             </div>
             <div className='delivery-item'>
               <FormControlLabel value="delivery" control={<Radio checkedIcon={<CheckIcon sx={{background: '#EA5A5A', borderRadius: '50%',color: '#fff', width: '24px', height: '24px'}}/>}></Radio>} label="Курьерская доставка" />
-              <a href='#'>условия доставки ></a>
+              {/*eslint-disable-next-line*/}
+              <a href=''>условия доставки ></a>
             </div>
           </RadioGroup>
         </FormControl>
@@ -40,19 +44,19 @@ const Delivery = () => {
               id="country"
               label="Страна"
               type="text"
-              fullWidth='true'
+              fullWidth={true}
             />
             <InputForm
               id="street"
               label="Улица"
               type="tel"
-              fullWidth='true'
+              fullWidth={true}
             />
             <InputForm
               id="house"
               label="Дом"
               type="tel"
-              fullWidth='true'
+              fullWidth={true}
             />
           </div>
           <div className='order-place-block' style={{width: '48%'}}>
@@ -60,13 +64,13 @@ const Delivery = () => {
               id="city"
               label="Город"
               type="text"
-              fullWidth='true'
+              fullWidth={true}
             />
             <InputForm
               id="appt"
               label="Квартира"
               type="mail"
-              fullWidth='true'
+              fullWidth={true}
             />
           </div>
         </Box>
@@ -75,7 +79,7 @@ const Delivery = () => {
           id="comment"
           label="Комментарий"
           type="text"
-          fullWidth='true'
+          fullWidth={true}
         />
       </Box>
     </Box>

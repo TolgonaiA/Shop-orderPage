@@ -1,6 +1,6 @@
 import React from 'react';
 import './OrderPlace.css'
-import {Box, TextField, Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import InputForm from "../../components/InputForm";
 
 const OrderPlace = () => {
@@ -13,7 +13,7 @@ const OrderPlace = () => {
             id="name"
             label="Имя"
             type="text"
-            fullWidth='true'
+            fullWidth={true}
           />
           <div style={{display: 'flex'}}>
             <InputForm
@@ -21,7 +21,7 @@ const OrderPlace = () => {
               label="Телефон"
               type="tel"
               margin='15px'
-              fullWidth='true'
+              fullWidth={true}
             />
             <InputForm
               id="add"
@@ -34,7 +34,7 @@ const OrderPlace = () => {
             id="addPhone"
             label="Доп телефон или whatsapp"
             type="tel"
-            fullWidth='true'
+            fullWidth={true}
           />
         </div>
         <div className='order-place-block' style={{width: '48%'}}>
@@ -42,13 +42,13 @@ const OrderPlace = () => {
             id="lastName"
             label="Фамилия"
             type="text"
-            fullWidth='true'
+            fullWidth={true}
           />
           <InputForm
             id="email"
             label="E-mail"
             type="mail"
-            fullWidth='true'
+            fullWidth={true}
           />
         </div>
       </Box>

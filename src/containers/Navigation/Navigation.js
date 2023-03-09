@@ -1,6 +1,5 @@
-import React, {useRef, useState} from 'react';
-import {Box, Button, Container, CssBaseline, Link, ThemeProvider, Typography} from "@mui/material";
-import {styled} from "@mui/material/styles";
+import React, {useState} from 'react';
+import {Box, Button, Container, Link, Typography} from "@mui/material";
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneIcon from '@mui/icons-material/Phone';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -19,7 +18,7 @@ const Navigation = () => {
       <Container sx={{maxWidth: '1280px', margin: '0 auto'}}>
         <Box sx={{display: 'flex', justifyContent:'space-between', padding: '20px 0', alignItems: 'center'}}>
           <Box onClick={() => setIsMobile(false)} className={isMobile ? 'nav-links-mobile' : 'nav-links'} sx={{display: 'flex'}}>
-            {nav.map(el => <Typography sx={{marginRight: '30px', lineHeight: '1'}}>{el}</Typography>)}
+            {nav.map(el => <Typography key={el} sx={{marginRight: '30px', lineHeight: '1'}}>{el}</Typography>)}
           </Box>
           <Button onClick={() => setIsMobile(!isMobile)} className='mobile-menu'>
             {isMobile ? <CloseIcon/>:<ListIcon/>}

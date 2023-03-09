@@ -7,7 +7,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 
 const data = {
-  'Меню': ['Каталог', 'Акции', 'Популярные товары', 'Новинки', 'Новости', 'О компании', 'Контакты', 'Контакты'],
+  'Меню': ['Каталог', 'Акции', 'Популярные товары', 'Новинки', 'Новости', 'O компании', 'Контакты'],
   'Категории': ['Бумага', 'Письмо и графика', 'Канц товары', 'Художественные товары', 'Творчество', 'Полиграфические материалы', 'Распродажи', 'Офисное оборудование', 'Игры и игрушки', 'Сувенирная продукция'],
 }
 
@@ -26,20 +26,20 @@ const Footer = () => {
         <Typography className='footer-title'>Kanzler&Bürger</Typography>
         <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
           {Object.keys(data).map(el =>
-            <Box sx={{display: 'flex', flexDirection: 'column'}}>
+            <Box key={el} sx={{display: 'flex', flexDirection: 'column'}}>
               <Typography className='footer-subtitle'>{el}</Typography>
               {data[el].map(item => (
-                <Link className='footer-item'>{item}</Link>
+                <Link key={item} className='footer-item'>{item}</Link>
               ))}
             </Box>
           )}
           <Box>
             <Typography className='footer-subtitle'>Контакты</Typography>
             {Object.keys(contacts).map(el =>
-              <Box sx={{display: 'flex', flexDirection: 'column'}}>
+              <Box key={el} sx={{display: 'flex', flexDirection: 'column'}}>
                 <Typography className='footer-item'>{el}</Typography>
                 {contacts[el].map(item => (
-                  <Typography className='footer-item'>{item}</Typography>
+                  <Typography key={item} className='footer-item'>{item}</Typography>
                 ))}
               </Box>
             )}
