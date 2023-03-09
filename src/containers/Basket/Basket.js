@@ -6,43 +6,18 @@ import {
 } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './Basket.css';
-import Pen from '../../assets/pen.png';
-import USB from '../../assets/usb.png';
-import Pens from '../../assets/pens.png';
+
 
 const rows = ['Фото', 'Название', 'Артикул', 'Кол-во','Цена']
 
-const data = [
-  {
-    img: Pen,
-    name: 'Lorem ipsum dolor sit amet consectetur. Duis',
-    art: 'L434-GH43',
-    count: '0',
-    price: 420,
-  },
-  {
-    img: USB,
-    name: 'Lorem ipsum dolor sit amet ',
-    art: 'L434-GH43',
-    count: '0',
-    price: 420,
-  },
-  {
-    img: Pens,
-    name: 'Lorem ipsum dolor sit amet consectetur. Dictum venenatis porta at mus sit congue',
-    art: 'L434-GH43',
-    count: '0',
-    price: 10000,
-    prevPrice: 11000
-  },
-]
 
-const Basket = () => {
+
+const Basket = ({data}) => {
 
   return (
     <Box sx={{marginBottom: '30px'}}>
       <Box className='basket-title'>
-        <Typography className='basket-title-item'>Корзина(3)</Typography>
+        <Typography className='basket-title-item'>Корзина({data.length})</Typography>
         <button type='button' className='basket-title-btn'><KeyboardArrowUpIcon className='basket-title-icon'/></button>
       </Box>
       <TableContainer className='basket-table' component={Paper}>
