@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Shop-orderPage/static/css/main.67314f74.css",
-    "main.js": "/Shop-orderPage/static/js/main.9df06e8a.js",
+    "main.css": "/Shop-orderPage/static/css/main.30893b17.css",
+    "main.js": "/Shop-orderPage/static/js/main.a9fcac9d.js",
     "static/media/SFProDisplay.ttf": "/Shop-orderPage/static/media/SFProDisplay.1e1c0e29b79b49a6ff4d.ttf",
     "index.html": "/Shop-orderPage/index.html",
-    "main.67314f74.css.map": "/Shop-orderPage/static/css/main.67314f74.css.map",
-    "main.9df06e8a.js.map": "/Shop-orderPage/static/js/main.9df06e8a.js.map"
+    "main.30893b17.css.map": "/Shop-orderPage/static/css/main.30893b17.css.map",
+    "main.a9fcac9d.js.map": "/Shop-orderPage/static/js/main.a9fcac9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.67314f74.css",
-    "static/js/main.9df06e8a.js"
+    "static/css/main.30893b17.css",
+    "static/js/main.a9fcac9d.js"
   ]
 }
