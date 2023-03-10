@@ -31,6 +31,7 @@
   font-size: 14px!important;
   line-height: 100% !important;
   color: #FFFFFF;
+  margin-bottom: 10px!important;
 }
 
 .footer-item {
@@ -39,4 +40,5 @@
   color: #FFFFFF!important;
   opacity: 0.6!important;
   text-decoration: none!important;
+  margin-right: 7px;
 }

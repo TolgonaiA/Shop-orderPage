@@ -15,3 +15,22 @@
   color: #333333;
   margin-bottom: 40px!important;
 }
+
+.order-wrap {
+  display: flex;
+}
+
+.order-main {
+  max-width: 65%;
+}
+
+.order-total {
+  max-width: 32%;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1020px) {
+  .order-wrap {
+    flex-direction: column-reverse;
+  }
+}

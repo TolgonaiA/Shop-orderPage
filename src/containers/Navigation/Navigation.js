@@ -18,7 +18,8 @@ const Navigation = () => {
       <Container sx={{maxWidth: '1280px', margin: '0 auto'}}>
         <Box sx={{display: 'flex', justifyContent:'space-between', padding: '20px 0', alignItems: 'center'}}>
           <Box onClick={() => setIsMobile(false)} className={isMobile ? 'nav-links-mobile' : 'nav-links'} sx={{display: 'flex'}}>
-            {nav.map(el => <Typography key={el} sx={{marginRight: '30px', lineHeight: '1'}}>{el}</Typography>)}
+            {/*eslint-disable-next-line*/}
+            {nav.map(el => <a className='nav-links-items' key={el}>{el}</a>)}
           </Box>
           <Button onClick={() => setIsMobile(!isMobile)} className='mobile-menu'>
             {isMobile ? <CloseIcon/>:<ListIcon/>}

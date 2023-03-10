@@ -65,8 +65,8 @@ const Order = () => {
     <Container maxWidth='lg' sx={{marginTop: '47px', background: 'rgba(229, 229, 229, 0.1)', position: 'relative'}}>
       <Typography className='order-path'>Главная/Корзина/Оформление заказа</Typography>
       <Typography variant='h4' className='order-title'>Оформление заказа</Typography>
-      <Box sx={{display: 'flex'}}>
-        <Box sx={{maxWidth: '65%'}}>
+      <Box className='order-wrap'>
+        <Box>
           <Basket 
             data={data}
             countDown={countDown}
@@ -77,7 +77,7 @@ const Order = () => {
           <ClientInfo/>
           <Delivery/>
         </Box>
-        <Box sx={{marginLeft: '30px', width: '32%'}}>
+        <Box>
           <OrderAmount data={data}/>
         </Box>
       </Box>
