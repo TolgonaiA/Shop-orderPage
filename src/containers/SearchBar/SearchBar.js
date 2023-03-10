@@ -7,7 +7,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SearchIcon from '@mui/icons-material/Search';
 
 
-const SearchBar = () => {
+const SearchBar = ({searchHandler}) => {
   return (
     <Container maxWidth='lg' className='searchBar-wrap' sx={{display: 'flex', alignItems: 'center', marginTop:'20px'}}>
       <Box sx={{display: 'flex'}}>
@@ -21,7 +21,7 @@ const SearchBar = () => {
         </Button>
       </Box>
       <Box className='searchBar-search-block' sx={{display: 'flex', flex: 1}}>
-        <FormControl sx={{flex: 1}}>
+        <FormControl sx={{flex: 1}} onKeyUp={event => searchHandler(event)}>
           <OutlinedInput
             sx={{
               backgroundColor: '#F7F7F7',
